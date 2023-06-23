@@ -127,7 +127,7 @@
                                     <li class="col-sm-6 col-lg-3">
                                         <div class="i-circled i-alt mx-auto bg-color">3</div>
                                         <div class="mt-3">
-                                            <h4 class="mb-1 fw-bold">June 14, 2023 to July 31, 2023</h4>
+                                            <h4 class="mb-1 fw-bold">July 14 to 31, 2023</h4>
                                             <span class="fc-muted">Shortlist and RSVP Period</span>
                                         </div>
                                     </li>
