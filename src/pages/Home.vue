@@ -709,7 +709,7 @@
                         <div>
                           <h4 class="mb-1 fw-bold">Workshop</h4>
                           <span class="fc-muted"
-                            >On hands activities</span
+                            >On hands activities with skillful experts</span
                           >
                         </div>
                       </div>
@@ -966,7 +966,7 @@
                         <div>
                           <h4 class="mb-1 fw-bold">Workshop</h4>
                           <span class="fc-muted"
-                            >On hands activities</span
+                            >On hands activities with skillful experts</span
                           >
                         </div>
                       </div>

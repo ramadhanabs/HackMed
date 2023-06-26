@@ -19,10 +19,11 @@
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        @click="setOpenMenu()"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" :class="isOpenMenu && 'show'" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
           <li class="nav-item">
             <RouterLink class="nav-link" to="/">Home</RouterLink>
@@ -89,4 +90,12 @@
 
 <script setup>
 import { RouterLink } from "vue-router";
+import { ref } from 'vue'
+
+const isOpenMenu = ref(false)
+
+function setOpenMenu(){
+  isOpenMenu.value = !isOpenMenu.value
+  console.log(isOpenMenu.value)
+}
 </script>
