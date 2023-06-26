@@ -331,7 +331,7 @@
             </h2>
 
             <!-- Desktop -->
-            <div class="d-none d-md-block" style="transform: none">
+            <div class="d-none d-md-block mb-5" style="transform: none">
               <div
                 id="side-navigation"
                 class="row mt-6 gx-6 ui-tabs ui-corner-all ui-widget ui-widget-content"
@@ -366,7 +366,8 @@
                         <li
                           data-animate="fadeInUp"
                           data-delay="30"
-                          class="ui-tabs-tab ui-corner-top ui-state-default ui-tab fadeInUp animated ui-tabs-active ui-state-active"
+                          class="ui-tabs-tab ui-corner-top ui-state-default ui-tab fadeInUp animated"
+                          :class="selectedTab === 'content-1' && 'ui-tabs-active ui-state-active'"
                           role="tab"
                           tabindex="0"
                           aria-controls="snav-content1"
@@ -375,7 +376,7 @@
                           aria-expanded="true"
                         >
                           <a
-                            href="#snav-content1"
+                            @click="setSelectedTab('content-1')"
                             class="d-flex ui-tabs-anchor"
                             role="presentation"
                             tabindex="-1"
@@ -402,6 +403,7 @@
                           data-animate="fadeInUp"
                           data-delay="40"
                           class="my-4 ui-tabs-tab ui-corner-top ui-state-default ui-tab fadeInUp animated"
+                          :class="selectedTab === 'content-2' && 'ui-tabs-active ui-state-active'"
                           role="tab"
                           tabindex="-1"
                           aria-controls="snav-content2"
@@ -410,7 +412,7 @@
                           aria-expanded="false"
                         >
                           <a
-                            href="#snav-content2"
+                            @click="setSelectedTab('content-2')"
                             class="d-flex ui-tabs-anchor"
                             role="presentation"
                             tabindex="-1"
@@ -436,13 +438,14 @@
                           role="tab"
                           tabindex="-1"
                           class="ui-tabs-tab ui-corner-top ui-state-default ui-tab fadeInUp animated"
+                          :class="selectedTab === 'content-3' && 'ui-tabs-active ui-state-active'"
                           aria-controls="snav-content3"
                           aria-labelledby="ui-id-3"
                           aria-selected="false"
                           aria-expanded="false"
                         >
                           <a
-                            href="#snav-content3"
+                            @click="setSelectedTab('content-3')"
                             class="d-flex ui-tabs-anchor"
                             role="presentation"
                             tabindex="-1"
@@ -531,6 +534,7 @@
                   data-animate="fadeIn"
                   data-delay="30"
                 >
+
                   <div
                     id="snav-content1"
                     aria-labelledby="ui-id-1"
@@ -538,6 +542,7 @@
                     class="ui-tabs-panel ui-corner-bottom ui-widget-content"
                     aria-hidden="false"
                     style=""
+                    v-if="selectedTab === 'content-1'"
                   >
                     <div>
                       <h4 class="mb-4 fc-muted text-uppercase ls4 fw-normal">
@@ -614,7 +619,7 @@
                     role="tabpanel"
                     class="ui-tabs-panel ui-corner-bottom ui-widget-content"
                     aria-hidden="true"
-                    style="display: none"
+                    v-else-if="selectedTab === 'content-2'"
                   >
                     <div>
                       <h4 class="mb-4 fc-muted text-uppercase ls4 fw-normal">
@@ -657,7 +662,7 @@
                     role="tabpanel"
                     class="ui-tabs-panel ui-corner-bottom ui-widget-content"
                     aria-hidden="true"
-                    style="display: none"
+                    v-else-if="selectedTab === 'content-3'"
                   >
                     <div>
                       <h4 class="mb-4 fc-muted text-uppercase ls4 fw-normal">
@@ -1510,6 +1515,18 @@
 <script setup>
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
+
+import { ref, onMounted } from 'vue'
+
+const selectedTab = ref('')
+
+function setSelectedTab(id){
+  selectedTab.value = id
+}
+
+onMounted(()=>{
+  selectedTab.value = 'content-1'
+})
 
 // import Header from './Header.vue'
 // import Footer from './Footer.vue'
