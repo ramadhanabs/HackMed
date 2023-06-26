@@ -649,8 +649,8 @@
                           </div>
                         </div>
                         <div>
-                          <h4 class="mb-1 fw-bold">Gala Dinner</h4>
-                          <!-- <span class="fc-muted">IT, Healthcare and Business Exhibition</span> -->
+                          <h4 class="mb-1 fw-bold">Networking Dinner</h4>
+                          <span class="fc-muted">Get connected with other participants, MIT Team, and mentors</span>
                         </div>
                       </div>
                     </div>
@@ -679,8 +679,7 @@
                         <div>
                           <h4 class="mb-1 fw-bold">Conference</h4>
                           <span class="fc-muted"
-                            >Full day event. The speakers are Stakeholders,
-                            SOE’s, Private Sectors</span
+                            >Gain insight from seasoned professionals</span
                           >
                         </div>
                       </div>
@@ -710,8 +709,7 @@
                         <div>
                           <h4 class="mb-1 fw-bold">Workshop</h4>
                           <span class="fc-muted"
-                            >IT, Healthcare and Business Workshop
-                            (Parallel)</span
+                            >On hands activities</span
                           >
                         </div>
                       </div>
@@ -724,10 +722,9 @@
                           </div>
                         </div>
                         <div>
-                          <h4 class="mb-1 fw-bold">Networking Dinner</h4>
+                          <h4 class="mb-1 fw-bold">Awarding Night</h4>
                           <span class="fc-muted"
-                            >Welcoming and entertaining Hackathon
-                            participants</span
+                            >Winner announcement</span
                           >
                         </div>
                       </div>
@@ -741,13 +738,11 @@
             <div class="d-md-none d-md-block">
               <div class="accordion mb-0 mt-6">
                 <div
-                  class="accordion-card not-animated"
-                  data-animate="fadeInUp"
-                  data-delay="30"
+                  class="accordion-card py-3"
                 >
                   <div class="accordion-header accordion-active">
                     <div class="accordion-title">
-                      <a href="#snav-content1" class="d-flex">
+                      <a @click="setSelectedTab('content-1')" class="d-flex">
                         <div class="me-4">
                           <div class="rounded-icon">
                             <i class="bi bi-calendar"></i>
@@ -769,7 +764,7 @@
                       <i class="accordion-open bi bi-chevron-up"></i>
                     </div>
                   </div>
-                  <div class="accordion-content" style="display: block">
+                  <div class="accordion-content" :style="{display: selectedTab === 'content-1' ? 'block' : 'hidden'}">
                     <div class="accordion-title">
                       <h4 class="mb-4 fc-muted text-uppercase ls4 fw-normal">
                         Day 1-2 Agenda
@@ -841,13 +836,11 @@
                 </div>
 
                 <div
-                  class="accordion-card not-animated"
-                  data-animate="fadeInUp"
-                  data-delay="30"
+                  class="accordion-card py-3"
                 >
                   <div class="accordion-header">
                     <div class="accordion-title">
-                      <a href="#snav-content1" class="d-flex">
+                      <a @click="setSelectedTab('content-2')" class="d-flex">
                         <div class="me-4">
                           <div class="rounded-icon">
                             <i class="bi bi-calendar"></i>
@@ -867,7 +860,7 @@
                       <i class="accordion-open bi bi-chevron-up"></i>
                     </div>
                   </div>
-                  <div class="accordion-content" style="display: none">
+                  <div class="accordion-content" :style="{display: selectedTab === 'content-2' ? 'block' : 'hidden'}">
                     <div class="accordion-title">
                       <h4 class="mb-4 fc-muted text-uppercase ls4 fw-normal">
                         Agenda Day 3
@@ -896,8 +889,8 @@
                           </div>
                         </div>
                         <div>
-                          <h4 class="mb-1 fw-bold">Gala Dinner</h4>
-                          <!-- <span class="fc-muted">IT, Healthcare and Business Exhibition</span> -->
+                          <h4 class="mb-1 fw-bold">Networking Dinner</h4>
+                          <span class="fc-muted">Get connected with other participants, MIT Team, and mentors</span>
                         </div>
                       </div>
                     </div>
@@ -905,13 +898,11 @@
                 </div>
 
                 <div
-                  class="accordion-card not-animated"
-                  data-animate="fadeInUp"
-                  data-delay="30"
+                  class="accordion-card py-3"
                 >
                   <div class="accordion-header">
                     <div class="accordion-title">
-                      <a href="#snav-content1" class="d-flex">
+                      <a @click="setSelectedTab('content-3')" class="d-flex">
                         <div class="me-4">
                           <div class="rounded-icon">
                             <i class="bi bi-calendar"></i>
@@ -929,7 +920,7 @@
                       <i class="accordion-open bi bi-chevron-up"></i>
                     </div>
                   </div>
-                  <div class="accordion-content" style="display: none">
+                  <div class="accordion-content" :style="{display: selectedTab === 'content-3' ? 'block' : 'hidden'}">
                     <div class="accordion-title">
                       <h4 class="mb-4 fc-muted text-uppercase ls4 fw-normal">
                         Agenda Day 4
@@ -945,8 +936,7 @@
                         <div>
                           <h4 class="mb-1 fw-bold">Conference</h4>
                           <span class="fc-muted"
-                            >Full day event. The speakers are Stakeholders,
-                            SOE’s, Private Sectors</span
+                            >Gain insight from seasoned professionals</span
                           >
                         </div>
                       </div>
@@ -976,8 +966,7 @@
                         <div>
                           <h4 class="mb-1 fw-bold">Workshop</h4>
                           <span class="fc-muted"
-                            >IT, Healthcare and Business Workshop
-                            (Parallel)</span
+                            >On hands activities</span
                           >
                         </div>
                       </div>
@@ -990,10 +979,9 @@
                           </div>
                         </div>
                         <div>
-                          <h4 class="mb-1 fw-bold">Networking Dinner</h4>
+                          <h4 class="mb-1 fw-bold">Awarding Night</h4>
                           <span class="fc-muted"
-                            >Welcoming and entertaining Hackathon
-                            participants</span
+                            >Winner announcement</span
                           >
                         </div>
                       </div>
