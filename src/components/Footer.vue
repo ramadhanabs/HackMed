@@ -112,7 +112,7 @@
 									<i class="icon-instagram"></i>
 								</a>
 	
-								<a href="mailto:feni.febriani@biofarma.co.id" class="social-icon inline-block si-small si-borderless mb-0 si-gplus">
+								<a href="mailto:hackathon@biofarma.co.id" class="social-icon inline-block si-small si-borderless mb-0 si-gplus">
 									<i class="icon-email"></i>
 									<i class="icon-email"></i>
 								</a>

@@ -44,13 +44,13 @@
                                     </a>
                                 </div>
                                 <div class="col-md-3 wow fadeInUp" data-wow-delay="400ms">
-                                    <a href="mailto:feni.febriani@biofarma.co.id">
+                                    <a href="mailto:hackathon@biofarma.co.id">
                                         <div class="card-contact p-4 center">
                                             <div class="square-icon">
                                                 <i class="bi bi-envelope"></i>
                                             </div>
                                             <h4 class="my-3">Email</h4>
-                                            <span class="fc-muted">Send to <br> feni.febriani@biofarma.co.id</span>
+                                            <span class="fc-muted">Send to <br> hackathon@biofarma.co.id</span>
                                         </div>
                                     </a>
                                 </div>

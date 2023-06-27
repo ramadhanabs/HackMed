@@ -331,7 +331,7 @@
                             <div class="center mt-6 wow fadeInUp" data-wow-delay="100ms">
                                 <h4>
                                     For any other questions about the application process, please email 
-                                    <a href="mailto:feni.febriani@biofarma.co.id">feni.febriani@biofarma.co.id</a> 
+                                    <a href="mailto:hackathon@biofarma.co.id">hackathon@biofarma.co.id</a> 
                                 </h4>
                                 <!-- <h3 class="text-capitalize fw-bold font-body">
                                     Can’t find the answer?
