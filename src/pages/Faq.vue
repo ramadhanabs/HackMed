@@ -85,7 +85,7 @@
                                             </h2>
                                             <div id="collapse4" class="accordion-collapse collapse" :class="selectedTab === 'content-4' && 'show'" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                                Bio Farma X MIT Hacking Medicine runs from Thursday, August 22nd to Sunday, August 27th.
+                                                Bio Farma X MIT Hacking Medicine runs from Thursday, August 24th to Sunday, August 27th.
                                             </div>
                                             </div>
                                         </div>
